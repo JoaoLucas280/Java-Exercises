@@ -1,7 +1,7 @@
 package Introdução.EstruturasSequenciais;
 import java.util.Scanner;
 
-public class Exercicio_1 {
+public class Encontrar_a_área_de_um_círculo {
     static void main() {
         Scanner sc = new Scanner(System.in);
         float pi = 3.14159F;
