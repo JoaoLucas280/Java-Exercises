@@ -1,4 +1,4 @@
-package Introdução.EstruturasSequenciais;
+package introducao.EstruturasSequenciais;
 import java.util.Scanner;
 
 public class Encontrar_a_área_de_um_círculo {
