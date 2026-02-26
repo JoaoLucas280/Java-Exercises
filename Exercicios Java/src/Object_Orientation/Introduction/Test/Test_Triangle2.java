@@ -1,16 +1,17 @@
 package Object_Orientation.Introduction.Test;
-import Object_Orientation.Introduction.Entities.Triangle_Atributes;
 
-import  java.util.Scanner;
+import Object_Orientation.Introduction.Entities.Triangle_Methods;
 
-public class Test_Triangle {
+import java.util.Scanner;
+
+public class Test_Triangle2 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-    Triangle_Atributes x, y;
+    Triangle_Methods x, y;
 
-    x = new Triangle_Atributes();   // Applying the attributes to the objects
-    y = new Triangle_Atributes();
+    x = new Triangle_Methods();
+    y = new Triangle_Methods();
 
         System.out.println("Enter the measures of triangle X: ");
         x.a = sc.nextDouble();
@@ -20,10 +21,10 @@ public class Test_Triangle {
         y.a = sc.nextDouble();
         y.b = sc.nextDouble();
         y.c = sc.nextDouble();
-        double p = (x.a + x.b + x.c) / 2.0;
-        double areaX = Math.sqrt(p * (p - x.a) * (p - x.b) * (p - x.c));
-        p = (y.a + y.b + y.c) / 2.0;
-        double areaY = Math.sqrt(p * (p - y.a) * (p - y.b) * (p - y.c));
+
+        double areaX = x.area();
+        double areaY = y.area(); //Applying the method to both x and y Triangles
+
         System.out.printf("Triangle X area: %.4f%n", areaX);
         System.out.printf("Triangle Y area: %.4f%n", areaY);
         if (areaX > areaY) {

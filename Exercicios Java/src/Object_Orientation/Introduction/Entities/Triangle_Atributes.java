@@ -6,5 +6,7 @@ public class Triangle_Atributes {
     public double b;
     public double c;
 
+    //Creating the attributes of the class triangle
+
 
 }
