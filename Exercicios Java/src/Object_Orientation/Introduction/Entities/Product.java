@@ -9,7 +9,7 @@ public class Product {
         return price * quantity;
     }
 
-    public void addProducts(int quantity) {
+    public void addProducts(int quantity){
         this.quantity += quantity; // "this" makes the reference to the attribute.
     }
 
