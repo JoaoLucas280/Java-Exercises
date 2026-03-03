@@ -18,12 +18,11 @@ public class Circle {
         System.out.println(v);
         System.out.println(PI);
     }
-
-    public static double circumference (double radius) {
-        return 2.0 * PI * radius;
+    public static double circumference(double radius) {
+        return 2 * PI * radius;
     }
-    public static double volume (double radius) {
-       return  4.0 * PI * radius * radius * radius / 3.0;
+    public static double volume(double radius) {
+        return 4.0 * PI * radius * radius * radius / 3.0;
     }
 
 
