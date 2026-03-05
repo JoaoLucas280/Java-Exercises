@@ -23,6 +23,9 @@ public class List01 {
         }
         System.out.println(list.size());
         System.out.println("-------------------------------");
+        System.out.println(list.indexOf(4));
+        Integer number = list.stream().filter(integer -> integer == 4).findFirst().orElse(null);
+        System.out.println("number = " + number);
         List <Integer> result = list.stream().filter(y -> y < 5).collect(Collectors.toList());
         System.out.println(result);
     }
