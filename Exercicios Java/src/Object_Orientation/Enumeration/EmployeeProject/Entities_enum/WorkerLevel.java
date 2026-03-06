@@ -1,4 +1,4 @@
-package Object_Orientation.Enumeration.Employee.Entities_enum;
+package Object_Orientation.Enumeration.EmployeeProject.Entities_enum;
 
 public enum WorkerLevel {
 

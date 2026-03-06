@@ -1,6 +1,6 @@
-package Object_Orientation.Enumeration.Employee.Entities;
+package Object_Orientation.Enumeration.EmployeeProject.Entities;
 
-import Object_Orientation.Enumeration.Employee.Entities_enum.WorkerLevel;
+import Object_Orientation.Enumeration.EmployeeProject.Entities_enum.WorkerLevel;
 
 import java.util.ArrayList;
 import java.util.Calendar;

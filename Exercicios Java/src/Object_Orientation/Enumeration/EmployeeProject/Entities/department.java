@@ -1,4 +1,4 @@
-package Object_Orientation.Enumeration.Employee.Entities;
+package Object_Orientation.Enumeration.EmployeeProject.Entities;
 
 public class department {
 
