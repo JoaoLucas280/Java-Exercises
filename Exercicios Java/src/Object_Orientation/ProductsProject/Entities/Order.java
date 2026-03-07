@@ -13,7 +13,7 @@ public class Order {
     private OrderStatus status;
 
     List<OrderItem> items = new ArrayList<>();
-    private static final DateTimeFormatter sdf = DateTimeFormatter.ofPattern("dd/MM/yyyy  HH:mm:ss");
+    private static final java.text.SimpleDateFormat sdf = new java.text.SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
     private Client client;
 
     public Order() {
@@ -68,12 +68,12 @@ public class Order {
     public String toString() {
         StringBuilder sb = new StringBuilder();
         sb.append("Horário do pedido: ");
-        sb.append(sdf.parse((CharSequence) moment) + "\n");
+        sb.append(sdf.format(moment) + "\n");
         sb.append("Status do pedido: ");
         sb.append(status + "\n");
         sb.append("Cliente: ");
         sb.append(client + "\n");
-        sb.append("Pedir itens:\n");
+        sb.append("Pedidos:\n");
         for (OrderItem item : items) {
             sb.append(item + "\n");
         }

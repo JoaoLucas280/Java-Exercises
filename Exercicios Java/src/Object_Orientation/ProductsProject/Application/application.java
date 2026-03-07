@@ -40,7 +40,7 @@ public class application {
 
             Order order = new Order(new Date(), status, client);
 
-            System.out.print("Digite a quantidade de itens? ");
+            System.out.print("Digite a quantidade de itens: ");
             int n = sc.nextInt();
             for (int i=1; i<=n; i++) {
                 System.out.println("Digite #" + i + " dados do produto:");

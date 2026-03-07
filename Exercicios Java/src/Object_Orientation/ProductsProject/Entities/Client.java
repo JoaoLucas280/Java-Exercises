@@ -41,6 +41,7 @@ public class Client {
         this.birthDate = birthDate;
     }
 
+    @Override
     public String toString(){
         return "Nome: " + name + ", Email: " + email + ", Data de nascimento: (DD/MM/YYYY)" + " "+ sdf.format(birthDate);
     }
