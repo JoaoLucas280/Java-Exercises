@@ -23,4 +23,9 @@ public class SavingsAccount extends Account {
     public void updateBalance(){
         balance += balance *  InterestRate; //mais uma vez somente dando certo com o "protected da varável balance"
     }
+
+    @Override
+    public void Withdraw(Double amount) {
+        balance -= amount;
+    }
 }

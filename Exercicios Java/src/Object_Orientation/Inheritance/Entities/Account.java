@@ -10,7 +10,10 @@ public class Account {
     public Account() {}
 
     public Account(Integer number, Double balance, String holder) {
+
         this.number = number;
+        this.balance = balance;
+        this.holder = holder;
     }
 
     public Integer getNumber() {
@@ -34,7 +37,7 @@ public class Account {
     }
 
     public void Withdraw(Double amount) {
-        balance -= amount;
+        balance -= amount + 5.0;
     }
     public void  Deposit(Double amount) {
         balance += amount;

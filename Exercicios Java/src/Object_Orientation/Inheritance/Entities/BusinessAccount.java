@@ -2,8 +2,6 @@ package Object_Orientation.Inheritance.Entities;
 
 public class BusinessAccount extends Account{
 
-
-
     private Double loanLimit;
 
 
@@ -29,6 +27,11 @@ public class BusinessAccount extends Account{
             Deposit(amount);
         }
     }*/
+    @Override
+    public void Withdraw(Double amount){
+        super.Withdraw(amount);
+        balance -= 2.0;
+    }
     public void loan(double amount){
         if (amount <= loanLimit){
             balance += amount - 10;
