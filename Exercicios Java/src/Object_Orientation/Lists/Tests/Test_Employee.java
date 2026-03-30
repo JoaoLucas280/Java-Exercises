@@ -7,7 +7,7 @@ import java.util.List;
 import java.util.Scanner;
 
 public class Test_Employee {
-    static void main() {
+    public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
 
